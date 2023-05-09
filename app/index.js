@@ -16,5 +16,19 @@ const character3 = new Fighter(
 const character4 = new Advisor("Tyrion", "Lannister", 32, "alive", "Daenerys");
 const character5 = new Squire("Bronn", "Lannister", 46, "alive", "Jaime", 8);
 
-character4.checkIfDead();
-console.log(character1, character2, character3, character4, character5);
+const allCharacters = [];
+allCharacters.push(character1, character2, character3, character4, character5);
+
+const giveMessage = () => {
+  const messages = [];
+  messages.push(
+    character1.talk(),
+    character2.talk(),
+    character3.talk(),
+    character4.talk(),
+    character5.talk()
+  );
+  return messages;
+};
+
+console.log(giveMessage());
