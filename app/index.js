@@ -31,4 +31,4 @@ const giveMessage = () => {
   return messages;
 };
 
-console.log(giveMessage());
+console.log();
