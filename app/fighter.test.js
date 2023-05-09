@@ -8,6 +8,7 @@ describe("Given a class Fighter", () => {
         "Martell",
         41,
         "alive",
+        "Que pasa",
         "lance",
         7
       );
@@ -16,6 +17,7 @@ describe("Given a class Fighter", () => {
       expect(character).toHaveProperty("house", "Martell");
       expect(character).toHaveProperty("age", 41);
       expect(character).toHaveProperty("status", "alive");
+      expect(character).toHaveProperty("speech", "Que pasa");
       expect(character).toHaveProperty("weapon", "lance");
       expect(character).toHaveProperty("skill", 7);
     });
