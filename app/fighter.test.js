@@ -9,7 +9,7 @@ describe("Given a class Fighter", () => {
         41,
         "alive",
         "lance",
-        "speed"
+        7
       );
 
       expect(character).toHaveProperty("name", "Oberyn");
@@ -17,7 +17,7 @@ describe("Given a class Fighter", () => {
       expect(character).toHaveProperty("age", 41);
       expect(character).toHaveProperty("status", "alive");
       expect(character).toHaveProperty("weapon", "lance");
-      expect(character).toHaveProperty("skill", "speed");
+      expect(character).toHaveProperty("skill", 7);
     });
   });
 });
