@@ -1,14 +1,14 @@
-import { ClassKing } from "./classKing";
+import { King } from "./king.js";
 
-describe("Given a class ClassKing", () => {
+describe("Given a class King", () => {
   describe("When we instantiate it", () => {
     test("Then it should have an object with the properties of the class", () => {
-      const character = new ClassKing(
+      const character = new King(
         "Tywin",
         "Lannister",
         48,
         "alive",
-        "Hola",
+        "Vais a morir todos",
         4
       );
 
@@ -16,7 +16,7 @@ describe("Given a class ClassKing", () => {
       expect(character).toHaveProperty("house", "Lannister");
       expect(character).toHaveProperty("age", 48);
       expect(character).toHaveProperty("status", "alive");
-      expect(character).toHaveProperty("speech", "Hola");
+      expect(character).toHaveProperty("speech", "Vais a morir todos");
       expect(character).toHaveProperty("kingYears", 4);
     });
   });
