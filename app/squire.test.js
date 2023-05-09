@@ -8,6 +8,7 @@ describe("Given a class Squire", () => {
         "Hightower",
         39,
         "alive",
+        "Hey",
         "Jaime",
         6
       );
@@ -16,6 +17,7 @@ describe("Given a class Squire", () => {
       expect(character).toHaveProperty("house", "Hightower");
       expect(character).toHaveProperty("age", 39);
       expect(character).toHaveProperty("status", "alive");
+      expect(character).toHaveProperty("speech", "Hey");
       expect(character).toHaveProperty("served", "Jaime");
       expect(character).toHaveProperty("flattery", 6);
     });
