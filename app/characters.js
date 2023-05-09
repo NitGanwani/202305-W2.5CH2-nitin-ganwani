@@ -6,10 +6,10 @@ export class Character {
     this.age = age;
     this.status = status;
     this.speech = speech;
-    this.series = "GOT";
+    this.series = "Game of trones";
   }
 
-  checkIfDead() {
+  kill() {
     this.status = "dead";
     return this.status;
   }

@@ -1,4 +1,4 @@
-import { Advisor } from "./advisor";
+import { Advisor } from "./advisor.js";
 
 describe("Given a class Advisor", () => {
   describe("When we instantiate it", () => {
