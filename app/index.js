@@ -19,8 +19,9 @@ const character5 = new Squire("Bronn", "Lannister", 46, "alive", "Jaime", 8);
 const allCharacters = [];
 allCharacters.push(character1, character2, character3, character4, character5);
 
+const messages = [];
+
 const giveMessage = () => {
-  const messages = [];
   messages.push(
     character1.talk(),
     character2.talk(),
@@ -31,4 +32,13 @@ const giveMessage = () => {
   return messages;
 };
 
-console.log();
+console.log(character1.series);
+
+giveMessage();
+
+for (const message of messages) {
+  console.log(message);
+}
+
+character2.kill();
+character4.kill();

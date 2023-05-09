@@ -6,7 +6,11 @@ export class Character {
     this.age = age;
     this.status = status;
     this.speech = speech;
-    this.series = "Game of trones";
+    this.series = "Game of thrones";
+  }
+
+  belong() {
+    return this.series;
   }
 
   kill() {
