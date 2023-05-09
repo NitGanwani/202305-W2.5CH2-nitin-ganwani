@@ -1,3 +1,4 @@
+/* eslint-disable max-params */
 import { Character } from "./characters";
 
 export class ClassKing extends Character {
