@@ -8,7 +8,7 @@ describe("Given a class Advisor", () => {
         "Lannister",
         34,
         "alive",
-        "Primero pego y luego pregunto",
+        "No sé por qué, pero creo que voy a morir pronto",
         "Daenerys"
       );
 
@@ -18,7 +18,7 @@ describe("Given a class Advisor", () => {
       expect(character).toHaveProperty("status", "alive");
       expect(character).toHaveProperty(
         "speech",
-        "Primero pego y luego pregunto"
+        "No sé por qué, pero creo que voy a morir pronto"
       );
       expect(character).toHaveProperty("advisedCharacter", "Daenerys");
     });
